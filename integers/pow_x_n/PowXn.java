@@ -30,6 +30,6 @@ public class PowXn {
 
     public static void main(String[] args) {
         PowXn obj = new PowXn();
-        System.out.println(obj.myPow(2, -2));
+        System.out.println(obj.myPow(2, 0));
     }
 }
