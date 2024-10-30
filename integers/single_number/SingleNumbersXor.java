@@ -1,15 +1,17 @@
-package single_number;
-
 public class SingleNumbersXor {
 
     public int singleNumber(int[] nums) {
         int ans = 0;
         for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
             ans = ans ^ nums[i];
-            System.out.println(ans);
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        SingleNumbersXor obj = new SingleNumbersXor();
+        int[] nums = { 4, 1, 2, 1, 2 };
+        System.out.println(obj.singleNumber(nums));
     }
 }
 
